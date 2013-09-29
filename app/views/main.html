@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Attend.me</h1>
+
+    <form class="form-inline">
+        <div class="input-append">
+            <input type="text" placeholder="Search" ng-model="searchText" />
+
+        </div>
+    </form>
+    <ul>
+        <li ng-repeat="person in attendeeList|filter:searchText"> {{ person.name }} <input type="checkbox" ng-model="person.present"/></li>
+
+    </ul>
+    <form class="form-inline">
+        <div class="input-append">
+            <input type="text" ng-model="newPerson" placeholder="name of person"/>
+            <button  class="btn btn-primary" ng-click="addPerson()">Add</button>
+        </div>
+    </form>
+</div>

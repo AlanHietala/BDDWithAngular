@@ -1,0 +1,10 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.present-true {
+    text-decoration: line-through;
+    color:red;
+}
